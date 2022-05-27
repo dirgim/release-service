@@ -73,6 +73,10 @@ spec:
                 required:
                 - pipeline
                 type: object
+              serviceAccount:
+                description: Service account to use in the release PipelineRun to
+                  gain elevated privileges
+                type: string
             required:
             - releasePipeline
             type: object

@@ -27,6 +27,9 @@ type ReleaseStrategySpec struct {
 
 	// Policy to validate before releasing an artifact
 	Policy string `json:"policy,omitempty"`
+
+	// Service account to use in the release PipelineRun to gain elevated privileges
+	ServiceAccount string `json:"serviceAccount,omitempty"`
 }
 
 // ReleasePipeline holds information about the Pipeline to be executed
